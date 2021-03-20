@@ -1,0 +1,217 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     overflow-x: hidden;
+    
+}
+
+body {
+     cursor: auto;
+     background: url(hero.jpg) no-repeat 50% 50%;
+}
+
+.content {
+     overflow:scroll;
+     width: 100%;
+     margin: 0 auto;
+     z-index: -1;
+     position: absolute;
+     top: 60%;
+     left: 0%;
+     transform: translate(0, -50%);
+}
+
+.content h3 {
+     text-align: center;
+     border-bottom: #333 solid 2px;
+     padding-bottom: 20px;
+     font-size: 45px;
+     color: #101010;
+     font-weight: 400;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+
+.content p {
+
+     margin-top: 0;
+     text-align: center;
+     color: #101010;
+     font-weight: 400;
+}
+
+.overlay-2 {
+     z-index: 0;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: #48A9A6;
+}
+
+.overlay {
+     
+     z-index: 1;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: url(/images/X2.jpg);
+     background-size: cover;
+     left: 0;
+}
+
+.overlay p {
+     font-size: 300px;
+     font-weight: 800;
+}
+
+
+.banner{
+     position: relative;
+     width: 100%;
+     height: 550px;
+     margin-bottom: 20px;
+     display: flex;
+}
+.first_banner{
+     width: 50%;
+     height: 100%;
+     /* position: absolute; */
+     background-image: url(./img/04.png);
+     background-size: cover;
+}
+.seccond_banner{
+     height: 100%;
+     width: 50%;
+     float: right;
+     /* position: absolute; */
+     background-image: url(./img/_49A4409.jpg);
+     background-size: cover;
+}
+.banner_content{
+     padding-left: 30px;
+     transform: translateY(400px);
+     
+}
+.introduce{
+     opacity: 0;
+     line-height: 1.6em;
+     transform: translateY(100px);
+}
+.hover{
+     width: 60px;
+     height: 60px;
+     border: 5px;
+     border-color: #fff;
+     background-color: rgba(255, 255, 255, 0.294);
+     border-radius: 50px;
+     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     transition: width 0.8s;
+}
+.hover i{
+     transform: translateX(20px)
+     translateY(19px);
+     font-size: 20px;
+     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     transition:  0.8s;
+}
+.hover a{
+     width: 80%;
+    position: absolute;
+    height: 50%;
+}
+.hover p{
+     opacity: 0;
+     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     transition:  0.8s;
+}
+.fa-arrow-left{
+     opacity: 0;;
+     transform: translateX(-10px);
+}
+.hover:hover  p{
+     transform: translateX(70px) translateY(-6px);
+     opacity: 1;
+     cursor: pointer;
+}
+.hover:hover .fa-arrow-right{
+     opacity: 0;
+}
+.hover:hover .fa-arrow-left{
+     opacity: 1;
+}
+.hover:hover{
+     width: 300px;
+}
+.hover:hover i{
+     transform: translateX(240px) translateY(20px) ;
+}
+.myBtn {
+     font-family: Poppins;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+button {
+     display: block;
+     padding: 24px 48px;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 12px;
+     letter-spacing: 6px;
+     color: #fff;
+     border: 2px solid #fff;
+     text-transform: uppercase;
+     outline: none;
+     overflow: hidden;
+     background: none;
+     z-index: 1;
+     cursor: crosshair;
+     transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+     color: #101010;
+     cursor: crosshair;
+}
+
+.myBtn:before {
+     content: "";
+     position: absolute;
+     background: #fff;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+     top: 0;
+}
+.link{
+     border-bottom:#333 solid 2px ;
+     padding-bottom: 30px;
+}
+.link a img{
+     width: 100%;
+     max-height: 228px;
+     cursor: pointer;
+}
+.link a {
+     cursor: pointer;
+}
+.text{
+     padding-bottom: 20px;
+     border-bottom: solid 2px #333;
+}
+.text p{
+     padding: 0;
+     left: 0;
+     text-align: left;
+     margin: 0;
+}

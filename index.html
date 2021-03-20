@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Moth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/master.css">
+</head>
+<body style=" overflow: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3" style="padding: 0; height: 48px; position: fixed; width: 100%;">
+        <div class="container" style="padding: 0;">
+            <a href="#" class="navbar-brand d-flex align-items-center"> 
+                <i class=" fa-lg text-primary mr-2">
+                    <img src="./images/Logo.png" alt="" style="width: 178px;">
+                </i>
+            </a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="#" class="nav-link font-bold" style="color: var(--nav-color);"> Home </a></li>
+              <li class="nav-item active"><a href="./about.html" class="nav-link font-bold text-light"> About </a></li>
+              <li class="nav-item active"><a href="./work.html" class="nav-link font-bold text-light"> Work </a></li>
+              <li class="nav-item active"><a href="./contact.html" class="nav-link font-bold text-light"> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="overlay">
+            
+            <div class="intro">
+                    <button class="myBtn" onclick="fadeOut()">EXTERIOR RENDERING</button>
+            </div>
+        </div>
+      
+        <div class="overlay-2"></div>
+      
+        <div class="content">
+            <h3>STORIES THROW IMAGES</h3>
+            <p class="data">Arqui9 Visualisation is an award winning architectural visualisation studio located South of London,
+                <br>dedicated to creating visualisations for the (un)built environment.    
+            </p>
+            <div class="link col-md-12 row">
+                <a href="#" class="col-md-4">
+                    <img src="./images/X7.jpg" alt="">
+                </a>
+                <a href="#" class="col-md-4">
+                    <img src="./images/X2.jpg" alt="">
+                </a>
+                <a href="#" class="col-md-4">
+                    <img src="./images/rijnstraat-8-oma-ellen-van-loon-rotterdam-netherlands-architecture_dezeen_2364_col_13.jpg" alt="">
+                </a>
+            </div>
+            <div class="text col-md-12 row">
+                <div class="col-md-4" style="padding: 0;">
+                    <p>Service</p>
+                    <p>Primary</p>
+                    <p>Competition visualizations</p>
+                    <p>Design visualization support</p>
+                    <p>Computational design support</p>
+
+                </div>
+                <div class="col-md-8">
+                    <img src="./images/01_01.png" alt="" style="width:100%">
+                    <p>Competition visualizations</p>
+                    <p>Architectural design competitions are a world of their own. It’s a universe of extreme time limits and uncertainty
+                        that requires ultimate creativity and commitment to create something truly outstanding
+                    </p>
+                    <p>It’s also the most rewarding and fascinating part of the job.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+      </div>
+
+
+
+
+
+      <div class="footer">
+        <ul class="icon_footer">
+          <li><i class="fab fa-facebook trang"></i></li>
+          <li><i class="fab fa-behance trang"></i></li>
+          <li><i class="fab fa-vimeo trang"></i></li>
+          <li><i class="fab fa-instagram trang"></i></li>
+        </ul>
+    </div>
+    
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+      <script>
+      
+      function fadeOut() {
+      
+      TweenMax.to(".myBtn", 1, {
+          y: -100,
+          opacity: 0
+      });
+      
+      TweenMax.to(".screen", 2, {
+          y: -400,
+          opacity: 0,
+          ease: Power2.easeInOut,
+          delay: 2
+      });
+      
+      TweenMax.from(".overlay", 2, {
+          ease: Power2.easeInOut
+      });
+      
+      TweenMax.to(".overlay", 2, {
+          delay: 2.6,
+          top: "-110%",
+          ease: Expo.easeInOut
+      });
+      
+      TweenMax.to(".overlay-2", 2, {
+          delay: 3,
+          top: "-110%",
+          ease: Expo.easeInOut
+      });
+      
+      TweenMax.from(".content", 2, {
+          delay: 3.2,
+          opacity: 0,
+          ease: Power2.easeInOut
+      });
+      
+      TweenMax.to(".content", 2, {
+          opacity: 1,
+          y: -300,
+          delay: 3.2,
+          ease: Power2.easeInOut
+      });
+      
+      }
+      
+      </script>
+</body>
+</html>
+    
+    
