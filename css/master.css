@@ -13,6 +13,7 @@ body {
 }
 
 .content {
+     text-align: center;
      overflow:scroll;
      width: 100%;
      margin: 0 auto;
@@ -39,7 +40,11 @@ body {
      margin-top: 0;
      text-align: center;
      color: #101010;
-     font-weight: 400;
+     font-weight: 500;
+}
+.content img{
+     width: 53px;
+     text-align: center;
 }
 
 .overlay-2 {

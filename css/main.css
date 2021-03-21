@@ -314,10 +314,14 @@ hr{
 }
 .team img{
     width: 100%;
+    box-shadow: -4px 5px 7px 0px #888888;
 }
 .card{
     border: none;
     background-color: #f8f9fa;
+}
+.scrollreveal{
+    visibility: hidden;
 }
 /* ===================================Work====================*/
 .body_work{
@@ -381,7 +385,8 @@ hr{
   color: #fff;
   font-family: 'Kanit', sans-serif;
   padding-left: 15px;
-  font-size: 23px;
+  padding-bottom: 5px;
+  font-size: 15px;
   margin: 4px 0 -31px 0;
   transition: 00.5s;
   transform: translateY(0px);
@@ -401,11 +406,13 @@ hr{
 
 }
 .khoianh:hover h3{
+    
 	transform: translateY(-25px);
 	font-weight: 300;
 
 }
 .hover-content p{
+    font-size: 10px;
 	padding-left: 15px;
 	padding: 0px;
 	opacity: 0;
@@ -428,6 +435,26 @@ hr{
 	transform: translateY(9px);
 	color: #fff;
 }
+
+/* ========================================================================================ư
+===============================================STORE========================================
+============================================================================================ */
+.store-body{
+    background-color: rgb(236 236 236);
+    padding: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+.store-body img{
+    width: 100%;
+}
+.info-store{
+    padding: 20px 0;
+}
+
+
+
+
+
 /* ====================================Responsive==========================================
 ===========================================================================================
 =========================================================================================== */

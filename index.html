@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Moth</title>
+    <title>ONI.M STUDIO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/master.css">
+    <link rel="shortcut icon" href="./images/General/LOGO_B.png">
 </head>
 <body style=" overflow: hidden;">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3" style="padding: 0; height: 48px; position: fixed; width: 100%;">
         <div class="container" style="padding: 0;">
             <a href="#" class="navbar-brand d-flex align-items-center"> 
                 <i class=" fa-lg text-primary mr-2">
-                    <img src="./images/Logo.png" alt="" style="width: 178px;">
+                    <img src="./images/General/LOGO_Text.png" alt="" style="width: 178px;">
                 </i>
             </a>
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
@@ -42,20 +43,22 @@
         <div class="overlay-2"></div>
       
         <div class="content">
-            <h3>STORIES THROW IMAGES</h3>
-            <p class="data">Arqui9 Visualisation is an award winning architectural visualisation studio located South of London,
-                <br>dedicated to creating visualisations for the (un)built environment.    
+            <img src="./images/General/LOGO_B.png" alt="">
+            <hr size="10px" width="53%" color="#333">
+            <p class="data">ONI.M is a group of young artist and designer who share passion for architectural visualization and
+                <br>computational design.    
             </p>
-            <div class="link col-md-12 row">
-                <a href="#" class="col-md-4">
+            <div class="link col-md-12 row owl-carouse">
+                <a href="#" class="col-md-4 items">
                     <img src="./images/X7.jpg" alt="">
                 </a>
-                <a href="#" class="col-md-4">
+                <a href="#" class="col-md-4 items">
                     <img src="./images/X2.jpg" alt="">
                 </a>
-                <a href="#" class="col-md-4">
+                <a href="#" class="col-md-4 items">
                     <img src="./images/rijnstraat-8-oma-ellen-van-loon-rotterdam-netherlands-architecture_dezeen_2364_col_13.jpg" alt="">
                 </a>
+               
             </div>
             <div class="text col-md-12 row">
                 <div class="col-md-4" style="padding: 0;">
@@ -95,8 +98,10 @@
     
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="./js/slider.owl.js"></script>
+
       <script>
-      
       function fadeOut() {
       
       TweenMax.to(".myBtn", 1, {
