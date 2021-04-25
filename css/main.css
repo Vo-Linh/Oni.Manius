@@ -1,12 +1,15 @@
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
     background-color: #f8f9fa;
 }
-:root{
-    --nav-color:#dae0e5;
+
+:root {
+    --nav-color: #dae0e5;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -26,10 +29,12 @@ html,body{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
 /* ===============================Navbar============================= */
-nav{
+nav {
     position: fixed;
 }
+
 .social-link {
     background-color: rgb(29, 29, 29);
     width: 30px;
@@ -50,114 +55,138 @@ nav{
     text-decoration: none;
     color: #555;
 }
-.active{
+
+.active {
     padding-left: 10px;
 }
+
 /* =============================Footer================================ */
-.footer{
+.footer {
     position: fixed;
     width: 100%;
     height: 20px;
     background-color: #000000c2;
     padding-right: 7px;
     bottom: 0;
- }
- .icon_footer{
-     float: right;
-     display: flex;
+}
+
+.icon_footer {
+    float: right;
+    display: flex;
     list-style: none;
     cursor: pointer;
     padding-right: 10px;
- }
- .icon_footer li {
-     padding: 0px 5px;
-     color: black;
- }
- .trang {
-     color: #fff;
- }
-.footer-info{
+}
+
+.icon_footer li {
+    padding: 0px 5px;
+    color: black;
+}
+
+.trang {
+    color: #fff;
+}
+
+.footer-info {
     border-top: solid #333;
     margin: 30px 0 50px 0;
     padding-bottom: 50px;
     padding-top: 20px;
-    
+
 }
-.socail{
+
+.socail {
     margin-left: 50px;
 }
-.socail h5{
+
+.socail h5 {
     font-weight: 300;
 }
-.socail a,p{
+
+.socail a,
+p {
     color: #333;
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
 }
-a :hover{
+
+a :hover {
     color: #333;
     font-family: 'Rubik', sans-serif;
 }
+
 /*==============================Contact==============================  */
-.contact_body{
+.contact_body {
     display: flex;
     width: 100%;
     height: 100%;
     padding: 0;
 }
-.info_studio{
+
+.info_studio {
     display: block;
     height: 100%;
     background-image: url(/images/323134e02842d38aae3adb17ad5321f2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.info_studio h3{
+
+.info_studio h3 {
     padding-top: 20px;
 }
-.contact-icon li{
+
+.contact-icon li {
     display: flex;
     text-decoration: none;
     text-align: center;
     font-size: 18px;
     padding: 10px;
 }
-.contact-icon li p{
+
+.contact-icon li p {
     padding: 0px 5px 2px 8px;
 }
-.contact .row .card{
+
+.contact .row .card {
     border: none;
     margin: 20px;
 }
-.containerForm{
+
+.containerForm {
     padding-left: 38px;
     position: absolute;
-    
+
 }
-.containerForm h2{
+
+.containerForm h2 {
     color: #0f3959;
     font-size: 24px;
     font-weight: 500;
 }
-.containerForm .formBox{
+
+.containerForm .formBox {
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 30px;
 }
-.containerForm .formBox .inputBox{
+
+.containerForm .formBox .inputBox {
     position: relative;
     margin: 0 0 35px 0;
 }
-.containerForm .formBox .inputBox.w50{
+
+.containerForm .formBox .inputBox.w50 {
     width: 47%;
 }
-.containerForm .formBox .inputBox.w100{
+
+.containerForm .formBox .inputBox.w100 {
     width: 100%;
 }
+
 .containerForm .formBox .inputBox textarea,
-.containerForm .formBox .inputBox input{
+.containerForm .formBox .inputBox input {
     width: 100%;
     padding: 5px 0;
     resize: none;
@@ -168,10 +197,12 @@ a :hover{
     border-bottom: 1px solid #777;
     outline: none;
 }
-.containerForm .formBox .inputBox textarea{
+
+.containerForm .formBox .inputBox textarea {
     min-height: 120px;
 }
-.containerForm .formBox .inputBox input[type="submit"]{
+
+.containerForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
     background: #e6e7e8;
@@ -181,10 +212,12 @@ a :hover{
     padding: 12px;
     border: 1px #333;
 }
-.containerForm .formBox .inputBox input[type="submit"]:hover{
-    background:  #8d8c8c;
+
+.containerForm .formBox .inputBox input[type="submit"]:hover {
+    background: #8d8c8c;
 }
-.containerForm .formBox .inputBox span{
+
+.containerForm .formBox .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -194,10 +227,11 @@ a :hover{
     transition: 0.5s;
     pointer-events: none;
 }
-.containerForm .formBox .inputBox input:focus ~ span,
-.containerForm .formBox .inputBox textarea:focus ~ span,
- .containerForm .formBox .inputBox input:valid ~ span,
- .containerForm .formBox .inputBox textarea:valid ~ span{
+
+.containerForm .formBox .inputBox input:focus~span,
+.containerForm .formBox .inputBox textarea:focus~span,
+.containerForm .formBox .inputBox input:valid~span,
+.containerForm .formBox .inputBox textarea:valid~span {
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;
@@ -206,130 +240,162 @@ a :hover{
 }
 
 /* ===================================About===================*/
-.member,.about_body{
+.member,
+.about_body {
     width: 100%;
     height: 100%;
-    padding-top:5px ;
+    padding-top: 5px;
 }
-.content_about{
+
+.content_about {
     width: 100%;
     height: 75%;
 }
-.left-img img{
-    width:100%;
+
+.left-img img {
+    width: 100%;
     height: 100%;
 }
-.member{
+
+.member {
     margin: 0;
     padding: 0;
 }
-.right-img img{
+
+.right-img img {
     width: 100%;
     margin-left: 10px;
 }
-.info_member{
+
+.info_member {
     height: 50%;
     width: 100%;
 }
-.info_member .card{
+
+.info_member .card {
     border: none;
 }
-.logo-about{
+
+.logo-about {
     width: 56px;
 }
-.head-about{
+
+.head-about {
     display: block;
     margin: 50px 0;
     text-align: center;
-    
+
     padding: 10px
 }
-hr{
+
+hr {
     font-weight: 600;
 }
+
 .head-about p {
     font-weight: 500;
 }
-.service-about{
+
+.service-about {
     margin-top: 200px;
     margin-bottom: 50px;
 }
-.content{
-   margin-left: 20px;
+
+.content {
+    margin-left: 20px;
 }
-.content h3{
+
+.content h3 {
     font-weight: 400;
     padding-bottom: 50px;
 }
-.content h4{
+
+.content h4 {
     font-weight: 400;
 }
+
 .service-about img {
     margin-left: 50px;
     box-shadow: -5px 4px 11px 1px #888888;
 }
-.other-about{
+
+.other-about {
     margin: 40px 0;
     padding-bottom: 30px;
 }
-.other-about img{
+
+.other-about img {
     width: 100%;
     margin-left: 20px;
     box-shadow: 3px 4px 7px 0px #888888;
 }
-.other-text{
+
+.other-text {
     padding-bottom: 10px;
 }
-.other-about h3{
+
+.other-about h3 {
     padding-bottom: 20px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
 
 }
-.q_a{
+
+.q_a {
     margin: 50px 0;
 }
+
 .q_a img {
     width: 100%;
-    margin-left: 20px ;
+    margin-left: 20px;
     box-shadow: 3px 4px 7px 0px #888888;
 }
-.q_a p{
-    padding:0;
+
+.q_a p {
+    padding: 0;
     margin: 0;
 }
-.img-public{
+
+.img-public {
     padding: -15px;
 }
-.img-public img{
+
+.img-public img {
     padding: 0;
     width: 100%;
     margin: 50px 0;
 }
-.team{
+
+.team {
     margin: 30px 0;
 }
-.team-text{
+
+.team-text {
     padding-left: 20px;
 }
-.team img{
+
+.team img {
     width: 100%;
     box-shadow: -4px 5px 7px 0px #888888;
 }
-.card{
+
+.card {
     border: none;
     background-color: #f8f9fa;
 }
-.scrollreveal{
+
+.scrollreveal {
     visibility: hidden;
 }
+
 /* ===================================Work====================*/
-.body_work{
+.body_work {
     width: 100%;
     height: 100%;
 
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 100%;
     background-image: url(/images/Work/FrontART/FA_01.jpg);
@@ -339,34 +405,48 @@ hr{
     animation-duration: 18s;
     animation-iteration-count: infinite;
 }
-@keyframes banner{
-    
-    30%{background-image: url(/images/Work/FrontART/FA_00.jpg);}
-    60%{background-image: url(/images/Work/FrontART/FA_01.jpg);}
-    100%{background-image: url(/images/Work/FrontART/FA_00.jpg);}
-    
+
+@keyframes banner {
+
+    30% {
+        background-image: url(/images/Work/FrontART/FA_00.jpg);
+    }
+
+    60% {
+        background-image: url(/images/Work/FrontART/FA_01.jpg);
+    }
+
+    100% {
+        background-image: url(/images/Work/FrontART/FA_00.jpg);
+    }
+
 }
-.banner h2{
+
+.banner h2 {
     text-align: center;
     padding: 20%;
     margin: auto;
 }
-.noidung-work{
-	display: flex;
-	flex-wrap: wrap;
-	 /* width: 100%; */
+
+.noidung-work {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
 }
-.noidung-work .khoianh{
-	padding: 10px;
-	position: relative;
-	width: 33.3%;
-	box-sizing: border-box;
+
+.noidung-work .khoianh {
+    padding: 10px;
+    position: relative;
+    width: 33.3%;
+    box-sizing: border-box;
 }
+
 .khoianh img {
-	width: 100%;
-	margin: 0px;
+    width: 100%;
+    margin: 0px;
     box-shadow: 3px 4px 7px 0px #888888;
-} 
+}
+
 .hover-effect .hover-content {
     position: absolute;
     text-align: left;
@@ -374,6 +454,7 @@ hr{
     bottom: 0;
     left: 0;
 }
+
 .hover-effect .hover-content {
     position: absolute;
     text-align: left;
@@ -381,73 +462,83 @@ hr{
     bottom: 5px;
     left: 0;
 }
-.hover-content h3{
-  color: #fff;
-  font-family: 'Kanit', sans-serif;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  font-size: 15px;
-  margin: 4px 0 -31px 0;
-  transition: 00.5s;
-  transform: translateY(0px);
-  text-transform: uppercase;
+
+.hover-content h3 {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    margin: 4px 0 -31px 0;
+    transition: 00.5s;
+    transform: translateY(0px);
+    text-transform: uppercase;
 }
-.khoianh figure{
+
+.khoianh figure {
     margin: 0;
 }
+
 .khoianh figure img {
-	display: block;
-	transition: all 0.8s;
-	cursor: pointer;
+    display: block;
+    transition: all 0.8s;
+    cursor: pointer;
 }
-.hover-content h3 em{
-	font-weight: 200;
-	font-style: normal;
+
+.hover-content h3 em {
+    font-weight: 200;
+    font-style: normal;
 
 }
-.khoianh:hover h3{
-    
-	transform: translateY(-25px);
-	font-weight: 300;
+
+.khoianh:hover h3 {
+
+    transform: translateY(-25px);
+    font-weight: 300;
 
 }
-.hover-content p{
+
+.hover-content p {
     font-size: 10px;
-	padding-left: 15px;
-	padding: 0px;
-	opacity: 0;
-	transition: 0.5s;
-	margin-left: 15px;
-	text-transform: uppercase;
-	font-weight: 200;
-}
-.khoianh:hover img {
-	opacity: 2.8;
-	background-color: rgba(0, 0, 0, 0.37);
-}
-.khoianh figure:hover img {
-	opacity: 0.85;
-	/* transform: scale(1.04); */
+    padding-left: 15px;
+    padding: 0px;
+    opacity: 0;
+    transition: 0.5s;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
-.khoianh:hover p{
-	opacity: 1;
-	transform: translateY(9px);
-	color: #fff;
+.khoianh:hover img {
+    opacity: 2.8;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.khoianh figure:hover img {
+    opacity: 0.85;
+    /* transform: scale(1.04); */
+}
+
+.khoianh:hover p {
+    opacity: 1;
+    transform: translateY(9px);
+    color: #fff;
 }
 
 /* ========================================================================================ư
 ===============================================STORE========================================
 ============================================================================================ */
-.store-body{
+.store-body {
     background-color: rgb(236 236 236);
     padding: 50px;
     font-family: 'Rubik', sans-serif;
 }
-.store-body img{
+
+.store-body img {
     width: 100%;
 }
-.info-store{
+
+.info-store {
     padding: 20px 0;
 }
 
@@ -459,8 +550,39 @@ hr{
 ===========================================================================================
 =========================================================================================== */
 
-@media screen and (max-width: 1024){
-  html,body{
-      overflow:auto;
-  }
+@media screen and (max-width: 1024) {
+
+    html,
+    body {
+        overflow: auto;
+    }
+}
+
+/* ========================Animation intro============================== */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image:url(/images/Home/HOME_FP01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay h1 {
+    color: #ffff;
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+
+.overlay span {
+     color: #ffff;
+    font-size: 30px;
+    letter-spacing: 3px;
 }

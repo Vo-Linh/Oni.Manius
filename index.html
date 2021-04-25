@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONI.M STUDIO</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/master.css">
     <link rel="shortcut icon" href="./images/General/LOGO_B.png">
 </head>
-<body style=" overflow: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3" style="padding: 0; height: 48px; position: fixed; width: 100%;">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3"
+        style="padding: 0; height: 48px; position: fixed; width: 100%;">
         <div class="container" style="padding: 0;">
-            <a href="#" class="navbar-brand d-flex align-items-center"> 
+            <a href="#" class="navbar-brand d-flex align-items-center">
                 <i class=" fa-lg text-primary mr-2">
                     <img src="./images/General/LOGO_Text.png" alt="" style="width: 178px;">
                 </i>
             </a>
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="#" class="nav-link font-bold" style="color: var(--nav-color);"> Home </a></li>
-              <li class="nav-item active"><a href="./work.html" class="nav-link font-bold text-light"> Work </a></li>
-              <li class="nav-item active"><a href="./store.html" class="nav-link font-bold text-light"> Store </a></li>
-              <li class="nav-item active"><a href="./about.html" class="nav-link font-bold text-light"> About Us </a></li>
-              <li class="nav-item active"><a href="./contact.html" class="nav-link font-bold text-light"> Contact</a></li>
-            </ul>
-          </div>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link font-bold" style="color: var(--nav-color);">
+                            Home </a></li>
+                    <li class="nav-item active"><a href="./work.html" class="nav-link font-bold text-light"> Work </a>
+                    </li>
+                    <li class="nav-item active"><a href="./store.html" class="nav-link font-bold text-light"> Store </a>
+                    </li>
+                    <li class="nav-item active"><a href="./about.html" class="nav-link font-bold text-light"> About Us
+                        </a></li>
+                    <li class="nav-item active"><a href="./contact.html" class="nav-link font-bold text-light">
+                            Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="overlay">
-            
+    <div class="">
+        <!-- <div class="overlay">
+
             <div class="intro">
-                    <button class="myBtn" onclick="fadeOut()">EXTERIOR RENDERING</button>
+                <button class="myBtn" onclick="fadeOut()">EXTERIOR RENDERING</button>
             </div>
         </div>
-      
-        <div class="overlay-2"></div>
-      
-        <div class="content">
-            <img src="./images/General/LOGO_B.png" alt="">
-            <hr size="10px" width="53%" color="#333">
-            <p class="data">ONI.M is a group of young artist and designer who share passion for architectural visualization and
-                <br>computational design.    
-            </p>
-            <div class="link col-md-12 row owl-carouse">
-                <a href="#" class="col-md-4 items">
-                    <img src="./images/Home/HOME_TL_W_A01.jpg" alt="">
-                </a>
-                <a href="#" class="col-md-4 items">
-                    <img src="./images/Home/HOME_TL_W_A02.jpg" alt="">
-                </a>
-                <a href="#" class="col-md-4 items">
-                    <img src="./images/Home/HOME_TL_W_C01.jpg" alt="">
-                </a>
-               
+
+        <div class="overlay-2"></div> -->
+
+
+        <div class="introduce">
+
+        </div>
+        <div class="content" id="fullpage">
+            <div class="section">
+                <img src="./images/General/LOGO_B.png" alt="">
+                <hr size="10px" width="53%" color="#333">
+                <p class="data">ONI.M is a group of young artist and designer who share passion for architectural
+                    visualization and
+                    <br>computational design.
+                </p>
+                <div class="link row owl-carouse">
+                    <div class="slide item">
+                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
+                    </div>
+                    <div class="slide item">
+                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
+                    </div>
+                    <div class="slide item">
+                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
+                    </div>
+                    <div class="slide item">
+                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
+                    </div>
+                    <div class="slide item">
+                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
+                    </div>
+
+                </div>
             </div>
-            <div class="text col-md-12 row to-about">
+            <div class="text col-md-12 row to-about section">
                 <div class="col-md-4" style="padding: 0;">
                     <p>From our young talented team</p>
                     <p>We provide the 3d visual services for projects from
-                    </br>different scale ... 
+                        </br>different scale ...
                     </p>
                     <a class="button1" href="">
                         <span class="btn1">KNOW MORE ABOUT US</span>
                     </a>
-                   
+
                 </div>
                 <div class="col-md-8">
                     <img src="./images/Home/HOME_TL_W_A03.jpg" alt="" style="width:100%">
-                  
+
                 </div>
             </div>
             <div class="footer-info row col-sm-12">
@@ -95,73 +126,92 @@
                     <p>+84 949 482 573 - INFO@ONI.MSTUDIO.COM</p>
                 </div>
             </div>
-            
-            
-        </div>
-      </div>
 
-      <div class="footer">
+
+        </div>
+    </div>
+
+    <div class="footer">
         <ul class="icon_footer">
-          <li><i class="fab fa-facebook trang"></i></li>
-          <li><i class="fab fa-behance trang"></i></li>
-          <li><i class="fab fa-vimeo trang"></i></li>
-          <li><i class="fab fa-instagram trang"></i></li>
+            <li><i class="fab fa-facebook trang"></i></li>
+            <li><i class="fab fa-behance trang"></i></li>
+            <li><i class="fab fa-vimeo trang"></i></li>
+            <li><i class="fab fa-instagram trang"></i></li>
         </ul>
     </div>
-    
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="./js/slider.owl.js"></script>
 
-      <script>
-      function fadeOut() {
-      
-      TweenMax.to(".myBtn", 1, {
-          y: -100,
-          opacity: 0
-      });
-      
-      TweenMax.to(".screen", 2, {
-          y: -400,
-          opacity: 0,
-          ease: Power2.easeInOut,
-          delay: 2
-      });
-      
-      TweenMax.from(".overlay", 2, {
-          ease: Power2.easeInOut
-      });
-      
-      TweenMax.to(".overlay", 2, {
-          delay: 2.6,
-          top: "-110%",
-          ease: Expo.easeInOut
-      });
-      
-      TweenMax.to(".overlay-2", 2, {
-          delay: 3,
-          top: "-110%",
-          ease: Expo.easeInOut
-      });
-      
-      TweenMax.from(".content", 2, {
-          delay: 3.2,
-          opacity: 0,
-          ease: Power2.easeInOut
-      });
-      
-      TweenMax.to(".content", 2, {
-          opacity: 1,
-          y: -300,
-          delay: 3.2,
-          ease: Power2.easeInOut
-      });
-      
-      }
-      
-      </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/slider.owl.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <!-- <script>
+        $('.link').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            // nav: true,
+            // responsive: {
+            //     0: {
+            //         items: 1
+            //     },
+            //     600: {
+            //         items: 3
+            //     },
+            //     1000: {
+            //         items: 5
+            //     }
+            // }
+        })
+    </script> -->
+    <script>
+        function fadeOut() {
+
+            TweenMax.to(".myBtn", 1, {
+                y: -100,
+                opacity: 0
+            });
+
+            TweenMax.to(".screen", 2, {
+                y: -400,
+                opacity: 0,
+                ease: Power2.easeInOut,
+                delay: 2
+            });
+
+            TweenMax.from(".overlay", 2, {
+                ease: Power2.easeInOut
+            });
+
+            TweenMax.to(".overlay", 2, {
+                delay: 2.6,
+                top: "-110%",
+                ease: Expo.easeInOut
+            });
+
+            TweenMax.to(".overlay-2", 2, {
+                delay: 3,
+                top: "-110%",
+                ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".content", 2, {
+                delay: 3.2,
+                opacity: 0,
+                ease: Power2.easeInOut
+            });
+
+            TweenMax.to(".content", 2, {
+                opacity: 1,
+                y: -300,
+                delay: 3.2,
+                ease: Power2.easeInOut
+            });
+
+        }
+    </script>
 </body>
+
 </html>
-    
-    
