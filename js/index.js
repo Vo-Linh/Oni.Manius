@@ -1,26 +1,27 @@
 // ===================Fullpage============
-new Fullpage("#fullpage",{
+new fullpage("#fullpage",{
     //options here
+    licenseKey: null,
 	autoScrolling:true,
 	scrollHorizontally: true
 });
 
 // ===============Owl=======================
-$('.link').owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout:1000,
-    // nav: true,
-    // responsive: {
-    //     0: {
-    //         items: 1
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+	items:3,
+    // responsive:{
+    //     0:{
+    //         items:1
     //     },
-    //     600: {
-    //         items: 3
+    //     600:{
+    //         items:3
     //     },
-    //     1000: {
-    //         items: 5
+    //     1000:{
+    //         items:5
     //     }
     // }
-})
+});
+

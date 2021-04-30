@@ -10,207 +10,147 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
 
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/main.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/master.css">
     <link rel="shortcut icon" href="./images/General/LOGO_B.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3"
-        style="padding: 0; height: 48px; position: fixed; width: 100%;">
-        <div class="container" style="padding: 0;">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <i class=" fa-lg text-primary mr-2">
-                    <img src="./images/General/LOGO_Text.png" alt="" style="width: 178px;">
-                </i>
-            </a>
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link font-bold" style="color: var(--nav-color);">
-                            Home </a></li>
-                    <li class="nav-item active"><a href="./work.html" class="nav-link font-bold text-light"> Work </a>
-                    </li>
-                    <li class="nav-item active"><a href="./store.html" class="nav-link font-bold text-light"> Store </a>
-                    </li>
-                    <li class="nav-item active"><a href="./about.html" class="nav-link font-bold text-light"> About Us
-                        </a></li>
-                    <li class="nav-item active"><a href="./contact.html" class="nav-link font-bold text-light">
-                            Contact</a></li>
-                </ul>
-            </div>
+    <div class="body">
+        <div class="over-play">
+            <h1>Hello!</h1>
+            <h2>Welcome to Oni Manius</h2>
         </div>
-    </nav>
-    <div class="">
-        <!-- <div class="overlay">
-
-            <div class="intro">
-                <button class="myBtn" onclick="fadeOut()">EXTERIOR RENDERING</button>
+        <div id="fullpage">
+            <div class="section header-index">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3"
+                    style="padding: 0; height: 48px; position: fixed; width: 100%; z-index: 2;">
+                    <div class="container" style="padding: 0;">
+                        <a href="#" class="navbar-brand d-flex align-items-center">
+                            <i class=" fa-lg text-primary mr-2">
+                                <img src="./images/General/LOGO_Text.png" alt="" style="width: 178px;">
+                            </i>
+                        </a>
+                        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a href="./index.html"
+                                        class="nav-link font-bold text-light"> Home </a></li>
+                                <li class="nav-item active"><a href="./work.html" class="nav-link font-bold text-light">
+                                        Work </a></li>
+                                <li class="nav-item active"><a href="./store.html"
+                                        class="nav-link font-bold text-light"> Store </a></li>
+                                <li class="nav-item active"><a href="./about.html"
+                                        class="nav-link font-bold text-light"> About Us </a></li>
+                                <li class="nav-item active"><a href="./contact.html"
+                                        class="nav-link font-bold text-light"> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
             </div>
-        </div>
-
-        <div class="overlay-2"></div> -->
-
-
-        <div class="introduce">
-
-        </div>
-        <div class="content" id="fullpage">
-            <div class="section">
-                <img src="./images/General/LOGO_B.png" alt="">
-                <hr size="10px" width="53%" color="#333">
-                <p class="data">ONI.M is a group of young artist and designer who share passion for architectural
-                    visualization and
-                    <br>computational design.
-                </p>
-                <div class="link row owl-carouse">
-                    <div class="slide item">
-                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
-                    </div>
-                    <div class="slide item">
-                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
-                    </div>
-                    <div class="slide item">
-                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
-                    </div>
-                    <div class="slide item">
-                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
-                    </div>
-                    <div class="slide item">
-                        <img src="./images/Home/HOME_TL_W_A02.jpg" />
-                    </div>
-
-                </div>
-            </div>
-            <div class="text col-md-12 row to-about section">
-                <div class="col-md-4" style="padding: 0;">
-                    <p>From our young talented team</p>
-                    <p>We provide the 3d visual services for projects from
-                        </br>different scale ...
+            <div class="section content">
+                <div class="img-content">
+                    <img src="./images/General/LOGO_B.png" alt="">
+                    <hr size="10px" width="63%" color="#333">
+                    <p class="data">ONI.M is a group of young artist and designer who share passion for
+                        architectural
+                        visualization and
+                        <br>computational design.
                     </p>
-                    <a class="button1" href="">
-                        <span class="btn1">KNOW MORE ABOUT US</span>
-                    </a>
+                    <h3>OUTSTANDING PROJECTS</h3>
+                </div>
+                <div class="silder-img owl-carousel owl-theme">
+                    <div class="item">
+                        <h4>NOV 2020</h4>
+                        <img src="./images/Home/HOME_TL_W_A03.jpg" alt="">
+                        <div class="des-img">
+                            <p>INTERIOR DESIGN & VICUALIZATION</p>
+                            <h4>MINONOIR RESTAURANTS</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>NOV 2020</h4>
+                        <img src="./images/Home/HOME_TL_W_A02.jpg" alt="">
+                        <div class="des-img">
+                            <p>INTERIOR DESIGN & VICUALIZATION</p>
+                            <h4>MINONOIR RESTAURANTS</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>NOV 2020</h4>
+                        <img src="./images/Home/HOME_TL_W_C02.jpg" alt="">
+                        <div class="des-img">
+                            <p>INTERIOR DESIGN & VICUALIZATION</p>
+                            <h4>MINONOIR RESTAURANTS</h4>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="col-md-8">
-                    <img src="./images/Home/HOME_TL_W_A03.jpg" alt="" style="width:100%">
-
+                <button class=""><a href="./work.html" style="color: black;">OUR GALERY</a></button>
+                <hr size="10px" width="73%" color="#333">
+            </div>
+            <div class="section infomation">
+                <div class="col-sm-12 infomation_about">
+                    <div class="col-sm-5">
+                        <p>From our young talented team. </br>
+                            We provide the 3d visual services for projects from different scale ... </p>
+                        <button class=""><a href="./about.html" style="color: black;">KNOW MORE ABOUT US</a></button>
+                    </div>
+                    <div class="col-sm-7">
+                        <img src="./images/Home/HOME_TL_W_A03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 infomation-home row">
+                    <div class="col-md-8">
+                        <div class="card col-md-4">
+                            <img class="card-img-top" src="./images/Home/HOME_TL_W_B01.jpg" alt="">
+                        </div>
+                        <div class="card col-md-4">
+                            <img class="card-img-top" src="./images/Home/HOME_TL_W_B02.jpg" alt="">
+                        </div>
+                        <div class="card col-md-4">
+                            <img class="card-img-top" src="./images/Home/HOME_TL_W_C01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 text_info">
+                        <p>
+                            From our young talented team.</br>
+                            We provide the 3d visual services for projects from </br>
+                            different scale ...
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-info row col-sm-12">
-                <div class="socail col-sm-2">
-                    <h5>FOLOW</h5>
-                    <a href="">Instagram</a></br>
-                    <a href="">Behance</a>
-                </div>
-                <div class="socail col-sm-5">
-                    <h5>HOURS</h5>
-                    <p>Monday – Friday</p>
-                    <p>8:00am – 5:30pm
-                    </p>
-                    <p>DA NANG 5:30pm</p>
-                </div>
-                <div class="addres col-sm-4">
-                    <p>148 - PHAN DANG LUU - HAI CHAU - DANANG - VIET NAM</p>
-                    <p>+84 949 482 573 - INFO@ONI.MSTUDIO.COM</p>
-                </div>
-            </div>
-
-
         </div>
     </div>
 
-    <div class="footer">
-        <ul class="icon_footer">
-            <li><i class="fab fa-facebook trang"></i></li>
-            <li><i class="fab fa-behance trang"></i></li>
-            <li><i class="fab fa-vimeo trang"></i></li>
-            <li><i class="fab fa-instagram trang"></i></li>
-        </ul>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="./js/slider.owl.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript" src="./js/fullpage.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.min.js.map"></script>
+    <script type="text/javascript" src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
-    <!-- <script>
-        $('.link').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            // nav: true,
-            // responsive: {
-            //     0: {
-            //         items: 1
-            //     },
-            //     600: {
-            //         items: 3
-            //     },
-            //     1000: {
-            //         items: 5
-            //     }
-            // }
-        })
-    </script> -->
     <script>
-        function fadeOut() {
-
-            TweenMax.to(".myBtn", 1, {
-                y: -100,
-                opacity: 0
-            });
-
-            TweenMax.to(".screen", 2, {
-                y: -400,
-                opacity: 0,
-                ease: Power2.easeInOut,
-                delay: 2
-            });
-
-            TweenMax.from(".overlay", 2, {
-                ease: Power2.easeInOut
-            });
-
-            TweenMax.to(".overlay", 2, {
-                delay: 2.6,
-                top: "-110%",
-                ease: Expo.easeInOut
-            });
-
-            TweenMax.to(".overlay-2", 2, {
-                delay: 3,
-                top: "-110%",
-                ease: Expo.easeInOut
-            });
-
-            TweenMax.from(".content", 2, {
-                delay: 3.2,
-                opacity: 0,
-                ease: Power2.easeInOut
-            });
-
-            TweenMax.to(".content", 2, {
-                opacity: 1,
-                y: -300,
-                delay: 3.2,
-                ease: Power2.easeInOut
-            });
-
-        }
+        TweenMax.to(".over-play", 6, {
+            delay: 3,
+            top: "-120%",
+            ease: Expo.easeInOut
+        })
     </script>
 </body>
 
