@@ -730,12 +730,14 @@ hr {
 }
 
 .slide.s--active.s--active-prev {
-    -webkit-clip-path: circle(120vmax at 30vw 50%);
+    -webkit-clip-path: circle(120vmax at 30vw 50%); 
     clip-path: circle(120vmax at 30vw 50%);
 }
-
+/* nhan crtl f la ra thanh ti kiem
+go noi dung nhu thanh
+thay doi url() */
 .slide:nth-child(1) .slide__inner {
-    background-image: url(/images/Work/FrontART/FA_00.jpg);
+    background-image: url(/images/Home/HOME_TL_W_A01.jpg);
 }
 
 .slide:nth-child(2) .slide__inner {
