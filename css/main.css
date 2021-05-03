@@ -546,7 +546,19 @@ hr {
     padding: 20px 0;
 }
 
+.blog{
+    opacity: initial;
+}
 
+.blog_param:hover img{
+    background-color: rgb(200, 200, 200);
+    transform: scale(1.05);
+}
+
+.info-store:hover h5{
+    color: rgb(172, 3, 3);
+    transform: scale(1.05);
+}
 
 
 
