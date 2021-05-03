@@ -33,6 +33,7 @@ body {
 
 /* ===============================Navbar============================= */
 nav {
+    z-index: 2;
     position: fixed;
 }
 
@@ -106,6 +107,7 @@ nav {
 
 .socail a,
 p {
+    margin: 0;
     color: #333;
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
@@ -348,7 +350,7 @@ hr {
 
 .q_a img {
     width: 100%;
-    margin-left: 20px;
+    margin-left: 0px;
     box-shadow: 3px 4px 7px 0px #888888;
 }
 
@@ -386,7 +388,8 @@ hr {
 }
 
 .scrollreveal {
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* ===================================Work====================*/
@@ -460,7 +463,7 @@ hr {
     position: absolute;
     text-align: left;
     width: 100%;
-    bottom: 5px;
+    bottom: 35px;
     left: 0;
 }
 
@@ -730,9 +733,10 @@ hr {
 }
 
 .slide.s--active.s--active-prev {
-    -webkit-clip-path: circle(120vmax at 30vw 50%); 
+    -webkit-clip-path: circle(120vmax at 30vw 50%);
     clip-path: circle(120vmax at 30vw 50%);
 }
+
 /* nhan crtl f la ra thanh ti kiem
 go noi dung nhu thanh
 thay doi url() */
@@ -785,7 +789,7 @@ thay doi url() */
     margin-left: -30px;
     margin-top: 48px;
     max-width: 480px;
-    color: #fff;
+    color: rgb(251, 251, 251);
 }
 
 .slide__heading {
@@ -794,6 +798,8 @@ thay doi url() */
 }
 
 .slide__text {
+    text-transform: uppercase;
+    font-weight: 400;
     color: #fff;
     font-size: 25px;
 }

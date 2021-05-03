@@ -1,15 +1,15 @@
 $('.noidung-work').isotope({
-    // set itemSelector so .grid-sizer is not used in layout
-      itemSelector: '.khoianh',
-      percentPosition: true,
-      masonry: {
-      // use element for option
-      columnWidth: '.khoianh'
-    }
-  });
-  $(document).ready(function() {
-    $('.anh a').fancybox();
- });
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.khoianh',
+  percentPosition: true,
+  masonry: {
+    // use element for option
+    columnWidth: '.khoianh'
+  }
+});
+$(document).ready(function () {
+  $('.anh a').fancybox();
+});
 
 
 //  ===============silder=====================
@@ -62,3 +62,43 @@ $('.noidung-work').isotope({
     }, slidingAT * 0.75);
   }
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  var controls = document.querySelectorAll(".slider__control");
+  // console.log(controls)
+  var slides = document.querySelectorAll(".slide");
+  // console.log(slides);
+  auto();
+
+  function auto() {
+    var thoigian = setInterval(function () {
+      var slide = document.querySelector(".slide.s--active");
+      // console.log(slide);  
+      var vitrislide = 0;
+      for (var i = 0; slide = slide.previousElementSibling; vitrislide++) {}
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('s--active');
+      }
+      if (vitrislide == slides.length - 1) {
+        slides[0].classList.add('s--active');
+      } else {
+        slides[vitrislide].nextElementSibling.classList.add('s--active');
+        console.log(slide);
+      }
+    }, 3000)
+    // Tu dong chuyen slide
+    for (var i = 0; i < console.length; i++) {
+      // console.log(controls[i])
+      // controls[i].addEventListener('click', function () {
+      //   clearInterval(thoigian);
+      // })
+    }
+    [].slice.call(controls).forEach(function ($el) {
+      $el.addEventListener("click", () => {
+        clearInterval(thoigian);
+      });
+    });
+    // Dung tu dong chuyen slide
+  }
+
+}, false)
