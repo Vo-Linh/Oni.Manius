@@ -130,8 +130,8 @@
 button {
      display: block;
      padding: 11px 30px;
-     font-size: 50px;
-     letter-spacing: 6px;
+     font-size: 25px;
+     /* letter-spacing: 6px; */
      font-weight: 400;
      color: #fff;
      border: #fff solid 2px;
@@ -148,21 +148,23 @@ button {
      font-family: 'Rubik', sans-serif;
      position: relative;
 }
-
+.img-content {
+     padding-top: 4em;
+}
 .content img {
-     width: 80px;
+     width: 20%;
 }
 
 .content p {
-     margin: 0 8em;
-     border-top: solid 1px;
+     margin: 0px 11em;
+     /* border-top: solid 1px; */
      font-size: 2em;
      font-weight: 300;
 }
 
 .content h3 {
      position: relative;
-     padding: 2em;
+     padding: 1em;
      font-weight: 400;
      font-size: 2.4em;
 }
@@ -175,6 +177,9 @@ hr {
 }
 
 content button {
+     position:absolute;
+     left: 50%;
+     transform: translateX(-50%);
      border: 2px solid #333;
      border-radius: 4px;
      color: #333;
@@ -194,21 +199,34 @@ content button a {
 
 .silder-img img {
      width: 30%;
-     border-radius: 10px;
+     border-radius: 15px;
      box-shadow: 10px 10px 5px #888888;
+}
+
+.content button {
+     text-decoration: none;
+     font-size: 1em;
+     margin-left: 44%;
+     border: solid #333 1px;
+     padding: 4px 6px;
+     text-align: center;
 }
 
 .infomation {
      background: #efefef;
 }
 
+.infomation_about {
+     padding-top: 2em;
+}
 .infomation_about p {
      font-size: 1.5em;
      padding: 30px 30px 0 30px;
-     line-height: 1.5;
+     line-height: 1.8;
 }
 
 .infomation img {
+     height: 50%;
      width: 100%;
      margin-top: 30px;
      margin-right: 30px;
@@ -221,6 +239,7 @@ content button a {
      margin-top: 8px;
      padding: 0px 15px 0 15px;
      font-size: 2em;
+     border: #333 solid 1px;
 }
 
 .infomation-home {
@@ -228,12 +247,13 @@ content button a {
 }
 
 .infomation_about img {
+     /* height: 50%; */
      border-radius: 12px;
      box-shadow: 5px 6px 5px #888888;
 }
 
 .infomation-home img {
-     height: 64%;
+     height: 50%;
      border-radius: 12px;
      box-shadow: 5px 6px 5px #888888;
 }
@@ -386,4 +406,4 @@ nav ul li a:hover:before {
 
 nav ul li a:hover {
      color: #262626;
-}
+}    
