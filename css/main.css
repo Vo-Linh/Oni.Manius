@@ -4,7 +4,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
-    background-color: #e7e7e7;
+    background-color: #efefef;
 
 }
 
@@ -103,6 +103,7 @@ nav ul li a {
 }
 
 .footer-info {
+    bottom: 0;
     border-top: solid #333;
     margin: 30px 0 50px 0;
     padding-bottom: 20px;
@@ -345,7 +346,7 @@ hr {
 
 .card {
     border: none;
-    background-color: #a8a7a7;
+    background-color: #d2d3d2;
 }
 
 .scrollreveal {
@@ -381,9 +382,9 @@ hr {
 }
 
 .content_why {
-    line-height: 1.5;
-    font-size: 14px;
-    padding-top: 13px;
+    line-height: 1.4;
+    font-size: 13px;
+    padding-top: 22px;
     padding-left: 55px;
 }
 
@@ -445,11 +446,11 @@ hr {
 }
 
 .core-team {
-    height: 46%;
+    height: 52%;
     width: 100%;
-    background-color: #a8a7a7;
+    background-color: #d2d3d2;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 22px 0 0 0;
 }
 
 .card-body {
@@ -463,7 +464,7 @@ hr {
 }
 
 .core-team .card-text {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .section {
@@ -480,7 +481,7 @@ hr {
 .work-flow h3 {
     text-align: center;
     padding-top: 2.2em;
-    padding-bottom: 2.2em;
+    padding-bottom: 1.4em;
 }
 
 .content-work-flow {
@@ -495,7 +496,7 @@ hr {
 
 .content-work-flow p {
     padding-top: 0.8em;
-    padding-left: 40px;
+    padding-left: 3.3em;
     padding-right: 1.5em;
     padding-bottom: 0.5em;
     font-family: 'Rubik-Light', sans-serif;
@@ -609,7 +610,8 @@ hr {
 }
 
 .work-flow img {
-    width: 90%;
+    max-height: 80%;
+    max-width: 90%;
     box-shadow: -4px 5px 7px 0px #888888;
 }
 
@@ -618,7 +620,7 @@ hr {
 }
 
 .img_service {
-    height: 24%;
+    height: 25%;
     bottom: 0;
     background-position-x: center;
     background-position-y: top;
@@ -627,6 +629,7 @@ hr {
 }
 
 .service_about {
+    height: 75%;
     position: relative;
     margin: 0px;
     padding-top: 4em;
@@ -638,8 +641,9 @@ hr {
 
 .service_about img {
     width: 78%;
-    max-height: 70%;
-    margin-left: 3em;
+    max-height: 60%;
+    margin-left: 4em;
+    margin-top: 2em;
     box-shadow: 3px 4px 7px 0px #888888;
 }
 
@@ -658,12 +662,22 @@ hr {
 .p-t-05 {
     padding-top: 1em;
 }
+.h5_about{
+    margin-left: 2em;
+}
 
+.why_about_next{
+    padding-top: 0.8em;
+}
+
+.content_why_next{
+    padding-bottom: 0em;
+}
 /* ===================================Work====================*/
 .body_work {
     width: 100%;
     height: 100%;
-    background-color: #e7e7e7;
+    background-color: #efefef;
 }
 
 .banner {
@@ -897,11 +911,32 @@ hr {
 ===========================================================================================
 =========================================================================================== */
 
-@media screen and (max-width: 1024) {
+@media only screen and (min-width: 1400px) {
 
-    html,
-    body {
-        overflow: auto;
+    .content_why {
+        line-height: 1.5;
+        font-size: 1em;
+        padding-top: 22px;
+        padding-left: 55px;
+    }
+    .content_why h6 {
+        padding-top: 0.8em;
+        
+    }
+    .content_service {
+        font-size: 1.3em;
+        line-height: 1.8;
+        padding-top: 2em;
+        padding-left: 3em;
+        text-decoration: none;
+    }
+    .content_why_next{
+        padding-bottom: 4.5em;
+    }
+    .card-title {
+        padding-top: 1.5em;
+        padding-bottom: 0.5em;
+        margin-bottom: 0;
     }
 }
 
