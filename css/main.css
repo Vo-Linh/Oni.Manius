@@ -8,6 +8,10 @@ body {
 
 }
 
+.fancybox-slide--image {
+    background-color: #333 !important;
+}
+
 /* *{
     margin: 0;
     padding: 0;
@@ -101,12 +105,12 @@ nav ul li a {
 .footer-info {
     border-top: solid #333;
     margin: 30px 0 50px 0;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
 .socail {
-    margin-left: 50px;
+    /*     margin-left: 50px; */
 }
 
 .socail h5 {
@@ -119,6 +123,10 @@ p {
     color: #333;
     font-family: 'Rubik-light', sans-serif;
     font-weight: 100;
+}
+
+.address {
+    right: 0;
 }
 
 a :hover {
@@ -597,6 +605,7 @@ hr {
     margin: 2em 0;
 
 }
+
 .work-flow img {
     width: 90%;
     box-shadow: -4px 5px 7px 0px #888888;
@@ -615,36 +624,39 @@ hr {
     background-image: url(../images/AboutUs/CAM01.jpg);
 }
 
-.service_about{
+.service_about {
     position: relative;
     margin: 0px;
     padding-top: 4em;
 }
-.service_about h6{
+
+.service_about h6 {
     font-weight: 550;
 }
 
-.service_about  img {
+.service_about img {
     width: 78%;
     max-height: 70%;
     margin-left: 3em;
     box-shadow: 3px 4px 7px 0px #888888;
 }
 
-.content_service{
+.content_service {
     line-height: 1.5;
     padding-top: 2em;
     padding-left: 3em;
     text-decoration: none;
 }
 
-.content_service ul{
+.content_service ul {
     padding: 0;
     list-style-type: none;
 }
-.p-t-05{
+
+.p-t-05 {
     padding-top: 1em;
 }
+
 /* ===================================Work====================*/
 .body_work {
     width: 100%;
@@ -686,6 +698,7 @@ hr {
 }
 
 .noidung-work {
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     /* width: 100%; */
@@ -780,6 +793,23 @@ hr {
     opacity: 1;
     transform: translateY(9px);
     color: #fff;
+}
+
+#backtop {
+    /* display: none; */
+    position: relative;
+    bottom: 3px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    z-index: 99;
+    background-color: rgb(168, 168, 168);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
 }
 
 /* ========================================================================================ư
@@ -909,7 +939,6 @@ hr {
 .slider {
     position: relative;
     height: 100vh;
-    background-image: url(../images/Work/Works/008_a.jpg);
+    background-image: url(../images/Work/FrontART/FA_00.jpg);
     background-size: cover;
 }
-
