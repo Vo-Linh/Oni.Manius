@@ -79,8 +79,8 @@ nav ul li a {
 .footer {
     position: fixed;
     width: 100%;
-    height: 20px;
-    background-color: #000000c2;
+    height: 25px;
+    background-color: #b5b5b5;
     padding-right: 7px;
     bottom: 0;
 }
@@ -310,7 +310,7 @@ a :hover {
 
 .img_head_about {
     bottom: 0;
-    padding-bottom: 0px;
+    padding-bottom: 1%;
 }
 
 .head-about-content {
@@ -381,24 +381,26 @@ hr {
 }
 
 .content_why {
-    line-height: 1.6;
-    font-size: 15px;
+    line-height: 1.5;
+    font-size: 14px;
     padding-top: 13px;
-    padding-left: 40px;
+    padding-left: 55px;
 }
 
 .icon-why {
     width: 100%;
     margin-right: 10px;
-    margin-top: 25px;
+    margin-bottom: 25px;
     padding-bottom: 3px;
     height: 33px;
     float: right;
     font-size: 26px;
+    right: 0;
 }
 
 .icon-why img {
     /* width: 100%; */
+    right: 0;
     height: 100%;
     padding: 0 5px;
 }
@@ -439,7 +441,7 @@ hr {
 }
 
 .p-top-50 {
-    padding-top: 45px;
+    padding-top: 4%;
 }
 
 .core-team {
@@ -514,7 +516,7 @@ hr {
 
 
 .accordion button {
-    padding-left: 2.3em;
+    padding: 0.1em 2.3em;
     position: relative;
     display: block;
     text-align: left;
@@ -526,6 +528,7 @@ hr {
     border: none;
     background: none;
     outline: none;
+    /* padding: 2px; */
 }
 
 .accordion button:hover,
@@ -602,8 +605,7 @@ hr {
 .accordion .accordion-content p {
     font-size: 0.8rem;
     font-weight: 300;
-    margin: 2em 0;
-
+    /* margin: 2em 0; */
 }
 
 .work-flow img {
