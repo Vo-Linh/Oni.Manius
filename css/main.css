@@ -4,9 +4,14 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #e7e7e7;
+
 }
 
+/* *{
+    margin: 0;
+    padding: 0;
+} */
 :root {
     --nav-color: #dae0e5;
 }
@@ -58,8 +63,12 @@ nav {
     color: #555;
 }
 
-.active {
-    padding-left: 10px;
+/* .active {
+    /* padding-left: 10px; */
+/* } */
+
+nav ul li a {
+    font-size: 11px;
 }
 
 /* =============================Footer================================ */
@@ -94,7 +103,6 @@ nav {
     margin: 30px 0 50px 0;
     padding-bottom: 50px;
     padding-top: 20px;
-
 }
 
 .socail {
@@ -109,7 +117,7 @@ nav {
 p {
     margin: 0;
     color: #333;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik-light', sans-serif;
     font-weight: 100;
 }
 
@@ -153,6 +161,7 @@ a :hover {
 .contact .row .card {
     border: none;
     margin: 20px;
+    padding-top: 15px;
 }
 
 .containerForm {
@@ -285,10 +294,19 @@ a :hover {
 
 .head-about {
     display: block;
-    margin: 50px 0;
+    margin: 30px 0;
     text-align: center;
+    padding: 10px 0;
+}
 
-    padding: 10px
+.img_head_about {
+    bottom: 0;
+    padding-bottom: 0px;
+}
+
+.head-about-content {
+    margin-bottom: 1.6em;
+    padding: 10px 0 0 0;
 }
 
 hr {
@@ -299,10 +317,7 @@ hr {
     font-weight: 500;
 }
 
-.service-about {
-    margin-top: 200px;
-    margin-bottom: 50px;
-}
+
 
 .content {
     margin-left: 20px;
@@ -317,74 +332,11 @@ hr {
     font-weight: 400;
 }
 
-.service-about img {
-    margin-left: 50px;
-    box-shadow: -5px 4px 11px 1px #888888;
-}
 
-.other-about {
-    margin: 40px 0;
-    padding-bottom: 30px;
-}
-
-.other-about img {
-    width: 100%;
-    margin-left: 20px;
-    box-shadow: 3px 4px 7px 0px #888888;
-}
-
-.other-text {
-    padding-bottom: 10px;
-}
-
-.other-about h3 {
-    padding-bottom: 20px;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
-
-}
-
-.q_a {
-    margin: 50px 0;
-}
-
-.q_a img {
-    width: 100%;
-    margin-left: 0px;
-    box-shadow: 3px 4px 7px 0px #888888;
-}
-
-.q_a p {
-    padding: 0;
-    margin: 0;
-}
-
-.img-public {
-    padding: -15px;
-}
-
-.img-public img {
-    padding: 0;
-    width: 100%;
-    margin: 50px 0;
-}
-
-.team {
-    margin: 30px 0;
-}
-
-.team-text {
-    padding-left: 20px;
-}
-
-.team img {
-    width: 100%;
-    box-shadow: -4px 5px 7px 0px #888888;
-}
 
 .card {
     border: none;
-    background-color: #f8f9fa;
+    background-color: #a8a7a7;
 }
 
 .scrollreveal {
@@ -392,11 +344,311 @@ hr {
     visibility: visible;
 }
 
+.member-info {
+    border-radius: 10px;
+    width: 76%;
+    position: relative;
+}
+
+.member-info img {
+    width: 40%;
+}
+
+.card-body h5 {
+    margin: 0;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+.why_about {
+    margin: 0;
+    padding: 0;
+}
+
+.why_about_title {
+    padding-top: 25px;
+}
+
+.content_why {
+    line-height: 1.6;
+    font-size: 15px;
+    padding-top: 13px;
+    padding-left: 40px;
+}
+
+.icon-why {
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 25px;
+    padding-bottom: 3px;
+    height: 33px;
+    float: right;
+    font-size: 26px;
+}
+
+.icon-why img {
+    /* width: 100%; */
+    height: 100%;
+    padding: 0 5px;
+}
+
+.img_content_why {
+    width: 98%;
+    /* height: 40%; */
+    box-shadow: -3px 4px 7px 0px #888888;
+}
+
+.content_why h6 {
+    padding-top: 0.2em;
+    padding-top: 10px 0;
+    font-weight: 600;
+    font-family: 'Rubik-Both', sans-serif;
+}
+
+.why_des {
+    width: 60%;
+}
+
+.content-next-why-about {
+    text-decoration: none;
+    margin-top: 10px;
+    float: right;
+    padding-left: 40px;
+    width: 80%;
+}
+
+.blank {
+    width: 100%;
+    padding: 15px;
+}
+
+.p-l-12 {
+    padding-top: 10px;
+    /* padding-left: 8px; */
+}
+
+.p-top-50 {
+    padding-top: 45px;
+}
+
+.core-team {
+    height: 46%;
+    width: 100%;
+    background-color: #a8a7a7;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-title {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+}
+
+.core-team .card-text {
+    font-size: 12px;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-about {
+    padding-top: 0.5em;
+}
+
+.work-flow h3 {
+    text-align: center;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+}
+
+.content-work-flow {
+    margin-bottom: 3em;
+    margin-left: 1.5em;
+}
+
+.content-work-flow h6 {
+    font-family: 'Rubik-Both', sans-serif;
+    font-weight: bold;
+}
+
+.content-work-flow p {
+    padding-top: 0.8em;
+    padding-left: 40px;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Rubik-Light', sans-serif;
+}
+
+.content-work-flow a {
+    color: #333;
+    padding-top: 0.8em;
+    padding-left: 40px;
+    padding-right: 1.4em;
+    font-family: 'Rubik-Light', sans-serif;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.accordion button {
+    padding-left: 2.3em;
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    /* padding: 1em 0; */
+    color: #333;
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    /* color: #03b5d2; */
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 2em 0;
+
+}
+.work-flow img {
+    width: 90%;
+    box-shadow: -4px 5px 7px 0px #888888;
+}
+
+.service {
+    position: relative;
+}
+
+.img_service {
+    height: 24%;
+    bottom: 0;
+    background-position-x: center;
+    background-position-y: top;
+    width: 100%;
+    background-image: url(../images/AboutUs/CAM01.jpg);
+}
+
+.service_about{
+    position: relative;
+    margin: 0px;
+    padding-top: 4em;
+}
+.service_about h6{
+    font-weight: 550;
+}
+
+.service_about  img {
+    width: 78%;
+    max-height: 70%;
+    margin-left: 3em;
+    box-shadow: 3px 4px 7px 0px #888888;
+}
+
+.content_service{
+    line-height: 1.5;
+    padding-top: 2em;
+    padding-left: 3em;
+    text-decoration: none;
+}
+
+.content_service ul{
+    padding: 0;
+    list-style-type: none;
+}
+.p-t-05{
+    padding-top: 1em;
+}
 /* ===================================Work====================*/
 .body_work {
     width: 100%;
     height: 100%;
-
+    background-color: #e7e7e7;
 }
 
 .banner {
@@ -533,6 +785,7 @@ hr {
 ===============================================STORE========================================
 ============================================================================================ */
 .store-body {
+    overflow-y: visible;
     background-color: rgb(236 236 236);
     padding: 50px;
     font-family: 'Rubik', sans-serif;
@@ -546,21 +799,66 @@ hr {
     padding: 20px 0;
 }
 
-.blog{
+.body_blog {
+    overflow: hidden;
+}
+
+.blog {
+    overflow-x: hidden;
+    height: 100%;
+    width: 103%;
+    overflow: scroll;
     opacity: initial;
+    cursor: pointer;
 }
 
-.blog_param:hover img{
+.blog_param:hover img {
     background-color: rgb(200, 200, 200);
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
-.info-store:hover h5{
-    color: rgb(172, 3, 3);
-    transform: scale(1.05);
+.info-store:hover h5 {
+    color: rgb(100, 98, 98);
+    transform: scale(1.025);
 }
 
+.blog a {
+    color: #333;
+}
 
+.des-qa {
+    position: relative;
+}
+
+.des-qa-title {
+    cursor: pointer;
+}
+
+.des-qa-content-1 {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: auto;
+    background-color: #313131;
+    color: #fff;
+    border: rgb(251, 251, 251) solid 2px;
+    border-radius: 8px;
+    transform: translateX(50000px);
+    transition-timing-function: ease-in-out;
+
+}
+
+.des-qa-content-1 p {
+    color: #ddd;
+    padding: 5px;
+}
+
+.des-qa-title:hover+#qa-1 {
+    opacity: 1;
+    width: 100%;
+    transform: translateX(0);
+    z-index: 3;
+}
 
 /* ====================================Responsive==========================================
 ===========================================================================================
@@ -628,7 +926,7 @@ hr {
     margin-left: -30px;
     margin-top: -30px;
     border-radius: 50%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.075);
     transition: background-color 0.3s;
     cursor: pointer;
 }
@@ -638,7 +936,7 @@ hr {
 }
 
 .slider__control:hover {
-    background-color: #2da6ff;
+    background-color: #0f0f0fab;
 }
 
 .slider__control-line {
@@ -749,9 +1047,7 @@ hr {
     clip-path: circle(120vmax at 30vw 50%);
 }
 
-/* nhan crtl f la ra thanh ti kiem
-go noi dung nhu thanh
-thay doi url() */
+
 .slide:nth-child(1) .slide__inner {
     background-image: url(/images/Home/HOME_TL_W_A01.jpg);
 }

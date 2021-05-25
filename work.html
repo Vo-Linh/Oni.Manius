@@ -11,33 +11,25 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="shortcut icon" href="./images/General/LOGO_B.png">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3"
-    style="padding: 0; height: 48px; position: fixed; width: 100%; z-index: 2;">
-    <div class="container" style="padding: 0;">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <i class=" fa-lg text-primary mr-2">
-          <img src="./images/General/LOGO_Text.png" alt="" style="width: 178px;">
-        </i>
-      </a>
-      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-        class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-      <div id="navbarSupportedContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="./index.html" class="nav-link font-bold text-light"> Home </a></li>
-          <li class="nav-item active"><a href="./work.html" class="nav-link font-bold text-light"> Work </a></li>
-          <li class="nav-item active"><a href="./store.html" class="nav-link font-bold text-light"> Store </a></li>
-          <li class="nav-item active"><a href="./about.html" class="nav-link font-bold text-light"> About Us </a></li>
-          <li class="nav-item active"><a href="./contact.html" class="nav-link font-bold text-light"> Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Navigation Bar -->
+<nav>
+  <div class="brand">
+      <img src="./images/General/LOGO_B.png" style="width: 100%;" alt="">
+  </div>
+  <ul>
+      <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+      <li><a href="./work.html"><i class="fa fa-info" aria-hidden="true"></i> Work</a></li>
+      <li><a href="./blog.html"><i class="fa fa-truck" aria-hidden="true"></i> Blog</a></li>
+      <li><a href="./about.html"><i class="fa fa-telegram" aria-hidden="true"></i>About US</a></li>
+      <li><a href="./contact.html"><i class="fa fa-location-arrow" aria-hidden="true"></i> Contact</a></li>
+  </ul>
+</nav>
   <div class="overlay">
     <img src="./images/General/LOGO_B.png" alt="" width="70px">
     <h1>Oni.Manius</h1>
@@ -177,8 +169,8 @@
       </div>
       <div class="khoianh">
         <figure>
-          <a href="/IMAGES/04.png" data-fancybox="gallery">
-            <img src="/images/04.png">
+          <a href="/images/Work/Works/024_a.jpg" data-fancybox="gallery">
+            <img src="/images/Work/Works/024_a.jpg">
             <div class="hover-effect">
               <div class="hover-content">
                 <h3>BIODIESEL <em>SQUID</em></h2>
@@ -388,7 +380,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="./js/lightbox.js"></script>
+    <script src="./js/lightbox.js"></script>    
     <script src="https://unpkg.com/scrollreveal" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/scrollreveal" crossorigin="anonymous"></script>
@@ -400,35 +392,7 @@
         'wrapAround': true
       })
     </script>
-    <script>
-      TweenMax.to(".overlay h1", 2, {
-        delay: .6,
-        opacity: 0,
-        y: -60,
-        ease: Expo.easeInOut
-      })
-
-      TweenMax.to(".overlay img", 2, {
-        delay: 0,
-        opacity: 0,
-        y: -60,
-        ease: Expo.easeInOut
-      })
-
-      TweenMax.to(".overlay span", 2, {
-        delay: .8,
-        opacity: 0,
-        y: -60,
-        ease: Expo.easeInOut
-      })
-
-      TweenMax.to(".overlay", 2, {
-        delay: 1,
-        top: "-100%",
-        ease: Expo.easeInOut
-      })
-    </script>
-
+    
 
 </body>
 
