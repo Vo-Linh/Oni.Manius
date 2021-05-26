@@ -79,7 +79,7 @@ nav ul li a {
 .footer {
     position: fixed;
     width: 100%;
-    height: 25px;
+    height: 20px;
     background-color: #b5b5b5;
     padding-right: 7px;
     bottom: 0;
@@ -96,6 +96,10 @@ nav ul li a {
 .icon_footer li {
     padding: 0px 5px;
     color: black;
+}
+
+.icon_footer i {
+    color: #000;
 }
 
 .trang {
@@ -146,7 +150,7 @@ a :hover {
 .info_studio {
     display: block;
     height: 100%;
-    background-image: url(/images/323134e02842d38aae3adb17ad5321f2.jpg);
+    background-image: url(./images/Contact/CONTACT_00.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -180,9 +184,14 @@ a :hover {
 }
 
 .containerForm h2 {
+    padding-bottom: 0.5em;
     color: #0f3959;
     font-size: 24px;
     font-weight: 500;
+}
+
+.containerForm h4{
+    padding-bottom: 0.5em;
 }
 
 .containerForm .formBox {
@@ -190,7 +199,7 @@ a :hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 38px;
 }
 
 .containerForm .formBox .inputBox {
@@ -261,6 +270,13 @@ a :hover {
     color: #131212
 }
 
+.contact_content{
+    font-size: 0.9em;
+    padding-top: 3em;
+    background-image: none;
+    padding-left: 52px;
+    padding-bottom: 0.5em;
+}
 /* ===================================About===================*/
 .member,
 .about_body {
@@ -400,10 +416,11 @@ hr {
 }
 
 .icon-why img {
-    /* width: 100%; */
+    width: 100%;
     right: 0;
-    height: 100%;
+    /* height: 100%; */
     padding: 0 5px;
+    float: right;
 }
 
 .img_content_why {
@@ -446,7 +463,7 @@ hr {
 }
 
 .core-team {
-    height: 52%;
+    height: 53%;
     width: 100%;
     background-color: #d2d3d2;
     padding: 0;
@@ -458,13 +475,13 @@ hr {
 }
 
 .card-title {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.6em;
     margin-bottom: 0;
 }
 
 .core-team .card-text {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .section {
@@ -662,17 +679,19 @@ hr {
 .p-t-05 {
     padding-top: 1em;
 }
-.h5_about{
+
+.h5_about {
     margin-left: 2em;
 }
 
-.why_about_next{
+.why_about_next {
     padding-top: 0.8em;
 }
 
-.content_why_next{
+.content_why_next {
     padding-bottom: 0em;
 }
+
 /* ===================================Work====================*/
 .body_work {
     width: 100%;
@@ -834,7 +853,7 @@ hr {
 .store-body {
     overflow-y: visible;
     background-color: rgb(236 236 236);
-    padding: 50px;
+    padding: 67px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -852,9 +871,9 @@ hr {
 
 .blog {
     overflow-x: hidden;
-    height: 100%;
-    width: 103%;
-    overflow: scroll;
+    height: 80%;
+    width: 84%;
+    /* overflow: scroll; */
     opacity: initial;
     cursor: pointer;
 }
@@ -907,6 +926,14 @@ hr {
     z-index: 3;
 }
 
+.content-store {
+    margin-bottom: 2em;
+}
+
+.content-store h3 {
+    font-size: 1.5em;
+}
+
 /* ====================================Responsive==========================================
 ===========================================================================================
 =========================================================================================== */
@@ -919,10 +946,12 @@ hr {
         padding-top: 22px;
         padding-left: 55px;
     }
+
     .content_why h6 {
         padding-top: 0.8em;
-        
+
     }
+
     .content_service {
         font-size: 1.3em;
         line-height: 1.8;
@@ -930,13 +959,48 @@ hr {
         padding-left: 3em;
         text-decoration: none;
     }
-    .content_why_next{
+
+    .content_why_next {
         padding-bottom: 4.5em;
     }
+
     .card-title {
         padding-top: 1.5em;
         padding-bottom: 0.5em;
         margin-bottom: 0;
+    }
+
+    .store-body {
+
+        padding: 78px;
+        margin-left: 3em;
+
+    }
+
+    .blog {
+
+        height: 74%;
+        width: 84%;
+
+    }
+
+    .footer {
+        height: 25px;
+    }
+
+    .content-work-flow {
+        margin-bottom: 7em;
+        margin-left: 1.5em;
+    }
+    .contact {
+        padding-left: 4em;
+    }
+    .containerForm {
+        padding-top: 2em;
+        
+    }
+    .contact_content {
+        font-size: 1.1em;
     }
 }
 
