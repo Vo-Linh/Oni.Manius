@@ -58,7 +58,7 @@
 }
 
 .card img {
-     width: 100%;
+     width: 80%;
 }
 
 .over-play h2 {
@@ -287,7 +287,7 @@ content button a {
 
 .infomation-home img {
      margin-left: 30px;
-     height: 70%;
+     height: 74%;
      border-radius: 12px;
      box-shadow: 5px 6px 5px #888888;
      width: 96%;
@@ -393,6 +393,17 @@ h4 {
      .infomation-home {
           margin-bottom: -2em;
      }
+}
+@media only screen and (min-width: 1920px){
+     .infomation-home {
+          padding-bottom: 3em !important;
+      }
+      .silder-img{
+           height: 54%;
+      }
+      .footer-info p {
+          font-size: 1.3em;
+      }
 }
 
 
