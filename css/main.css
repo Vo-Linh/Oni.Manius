@@ -409,7 +409,7 @@ hr {
 
 .icon-why {
     width: 100%;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     margin-bottom: 25px;
     padding-bottom: 3px;
     height: 33px;
@@ -433,7 +433,7 @@ hr {
 }
 
 .content_why h6 {
-    padding-top: 0.2em;
+    padding-top: 0.6em;
     padding-top: 10px 0;
     font-weight: 600;
     font-family: 'Rubik-Both', sans-serif;
@@ -640,12 +640,13 @@ hr {
 }
 
 .img_service {
-    height: 25%;
-    bottom: 0;
-    background-position-x: center;
-    background-position-y: top;
+   height: auto;
+   background-size: cover;
+   width: 100%;
+   background-image: url(../images/AboutUs/ABOUT_BANNER_03.jpg);
+}
+.img_service img {
     width: 100%;
-    background-image: url(../images/AboutUs/CAM01.jpg);
 }
 
 .service_about {
@@ -840,8 +841,8 @@ hr {
     left: 50%;
     /* transform: translateX(-50%); */
     z-index: 99;
-    background-color: rgb(168, 168, 168);
-    color: white;
+    background-color: rgb(239 236 236 / 78%);
+    color: #060606;
     cursor: pointer;
     padding: 15px;
     /* Some padding */
@@ -874,8 +875,8 @@ hr {
 
 .blog {
     overflow-x: hidden;
-    height: 80%;
-    width: 84%;
+    height: 83%;
+    width: 110%;
     /* overflow: scroll; */
     opacity: initial;
     cursor: pointer;
@@ -973,26 +974,16 @@ hr {
         margin-bottom: 0;
     }
 
-    .store-body {
+    .store-body {padding: 78px;margin-left: 4em;}
 
-        padding: 78px;
-        margin-left: 3em;
-
-    }
-
-    .blog {
-
-        height: 74%;
-        width: 84%;
-
-    }
+    .blog {height: 74%;width: 110%;}
 
     .footer {
         height: 25px;
     }
 
     .content-work-flow {
-        margin-bottom: 7em;
+        margin-bottom: 6em;
         margin-left: 1.5em;
     }
     .contact {
@@ -1003,11 +994,12 @@ hr {
         
     }
     .contact_content {
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 2;
     }
     .content-work-flow p{
-        font-size: 1.2em;
+        padding-top: 2em;
+        font-size: 1.3em;
     }
     .accordion button .accordion-title{
         font-size: 1.2em;
@@ -1015,6 +1007,13 @@ hr {
     .accordion .accordion-content p{
         font-size: 1.1em;
     }
+    .work-flow img {
+        margin-top: 2em;
+    }
+    .content-work-flow h6{
+        font-size: 1.6em;
+    }
+
 }
 
 @media only screen and (min-width: 1920px) {
@@ -1042,6 +1041,9 @@ hr {
     align-items: center;
 }
 
+.overlay img {
+    width: 5%;
+}
 
 .overlay h1 {
     border: 2px soild #333;
