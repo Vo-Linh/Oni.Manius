@@ -734,6 +734,11 @@ hr {
     width: 100% !important;
     background-color: #151414c2 !important;
 }
+
+.fancybox-slide--image {
+    overflow: visible;
+    padding: 44px 0 21px 0 !important;
+}
 .banner h2 {
     text-align: center;
     padding: 20%;
@@ -991,6 +996,7 @@ blog_param hr{
     .blog {height: 74%;width: 110%;}
 
     .footer {
+        z-index: 99999;
         height: 25px;
     }
 

@@ -46,7 +46,9 @@ $(window).on('load', function () {
 })
 $(document).ready(function () {
   $('.anh a').fancybox({
-    // toolbar: false,
+    toolbar: true,
+    smallBtn: false,
+    buttons: ['my-zoom', 'fullScreen', 'close'],
   });
 
 });
