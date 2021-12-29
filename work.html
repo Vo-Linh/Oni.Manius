@@ -5,38 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ONI.M STUDIO</title>
+
+  <meta property="og:title" content="ONIMANIUS STUDIO">
+  <meta property="og:image" content="http://onimanius.com/images/General/LOGO_B.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/master.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/master.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="shortcut icon" href="./images/General/LOGO_B.png">
 </head>
 
 <body>
-<!-- Navigation Bar -->
-<nav>
-  <div class="brand">
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="brand">
       <img src="./images/General/LOGO_Text.png" style="width: 350%;" alt="">
-  </div>
-  <ul>
+    </div>
+    <ul>
       <li><a href="./index.html"> Home</a></li>
       <li><a href="./work.html"> Work</a></li>
-      <li><a href="./blog.html"> Blog</a></li>
+      <li><a href="./animation.html"> Animation</a></li>
       <li><a href="./about.html">About US</a></li>
       <li><a href="./contact.html"> Contact</a>
       </li>
-  </ul>
-</nav>
+    </ul>
+  </nav>
 
   <div class="overlay">
-    <img src="./images/General/LOGO_B.png" alt="" width="18%">
-    <h1>Oni.Manius</h1>
+    <img src="./images/General/LOGO_B.png" alt="" width="70px">
+    <h1>ONIMANIUS</h1>
 
   </div>
+
   <div class="body_work">
     <div class="slider">
       <button class="myBtn">EXPLORE</button>
@@ -51,221 +59,28 @@
       </div>
     </div>
     <div class="noidung-work">
+      {{#each product}}
       <div class="khoianh">
         <figure>
-          <a href="./images/Work/Works/001_a.png" data-fancybox="gallery">
-            <img src="./images/Work/Works/001_a.png">
+          <a href="http://onimanius.com:8000/images/upload/{{img}}" data-fancybox="gallery">
+            <img src="http://onimanius.com:8000/images/upload/{{img}}">
             <div class="hover-effect">
               <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
+                <h3>{{title}} <em></em></h2>
+                  <p>{{ description }}</p>
               </div>
             </div>
           </a>
 
         </figure>
       </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/002_b.png" data-fancybox="gallery">
-            <img src="./images/Work/Works/002_b.png">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/004_b.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/004_b.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/006_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/006_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/005_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/005_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/020_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/020_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/016_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/016_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/015_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/015_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/010_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/010_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/003_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/003_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure>
-          <a href="./images/Work/Works/008_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/008_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/007_a.png" data-fancybox="gallery">
-            <img src="./images/Work/Works/007_a.png">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/023_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/023_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/012_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/012_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/021_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/021_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
-      <div class="khoianh">
-        <figure class="anh">
-          <a href="./images/Work/Works/022_a.jpg" data-fancybox="gallery">
-            <img src="./images/Work/Works/022_a.jpg">
-            <div class="hover-effect">
-              <div class="hover-content">
-                <h3>BIODIESEL <em>SQUID</em></h2>
-                  <p>Awesome Subtittle Goes Here</p>
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
+      {{/each}}
+
 
     </div>
     <!-- ======================End img ========================== -->
-
     <button onclick="topFunction()" id="backtop"><i class="fas fa-arrow-up"></i></button>
-    <div class="footer-info row col-sm-12">
+    <div class="footer-info row col-sm-12" style="position: relative; height: 15vh; bottom: 8px">
       <div class="socail col-sm-1">
         <h5>FOLOW</h5>
         <a href="">Instagram</a></br>
@@ -284,42 +99,40 @@
       </div>
     </div>
 
-    <div class="footer">
-      <ul class="icon_footer">
-        <li><i class="fab fa-facebook trang"></i></li>
-        <li><i class="fab fa-behance trang"></i></li>
-        <li><i class="fab fa-vimeo trang"></i></li>
-        <li><i class="fab fa-instagram trang"></i></li>
-      </ul>
-    </div>
+
+  </div>
+
+  <div class="footer">
+    <ul class="icon_footer">
+      <li><i class="fab fa-facebook trang"></i></li>
+      <li><i class="fab fa-behance trang"></i></li>
+      <li><i class="fab fa-vimeo trang"></i></li>
+      <li><i class="fab fa-instagram trang"></i></li>
+    </ul>
+  </div>
 
 
-    <script src="https://kit.fontawesome.com/32de2c793f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="./js/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="./js/lightbox.js"></script>    
-    <script src="https://unpkg.com/scrollreveal" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal" crossorigin="anonymous"></script>
-    <script src="js/scrollReveal.js" crossorigin="anonymous"></script>
-    <script src="./js/main.js" crossorigin="anonymous"></script>
-    <script>
-      lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-      })
-    </script>
-    
-
+  <script src="https://kit.fontawesome.com/32de2c793f.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="./js/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="./js/lightbox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="./js/fullpage.js"></script>
+  <script type="text/javascript" src="./js/fullpage.min.js"></script>
+  <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
+  <script type="text/javascript" src="./js/fullpage.min.js.map"></script>
+  <script type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@ TweenMax.to(".over-play", 6, {
 // ===================Fullpage============
 new fullpage("#fullpage", {
     //options here
-    licenseKey: null,
+    licenseKey: 'YOUR_KEY_HERE',
     autoScrolling: true,
     scrollHorizontally: true
 });

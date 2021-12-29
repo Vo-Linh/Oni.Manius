@@ -77,6 +77,7 @@ nav ul li a {
 
 /* =============================Footer================================ */
 .footer {
+    z-index: 99999;
     position: fixed;
     width: 100%;
     height: 20px;
@@ -84,11 +85,13 @@ nav ul li a {
     padding-right: 7px;
     bottom: 0;
 }
+
 .footer-info p {
     margin-bottom: 0 !important;
 }
 
 .icon_footer {
+    margin-top: 2px;
     float: right;
     display: flex;
     list-style: none;
@@ -110,16 +113,19 @@ nav ul li a {
 }
 
 .footer-info {
-    bottom: 0;
-    border-top: solid #333;
-    margin: 30px 0 50px 0;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    border-top: solid #333 1px;
+    margin: 23px 0 23px 0;
+    /* padding-bottom: 20px; */
+    /* padding-top: 20px; */
 }
 
 
 .socail h5 {
-    font-weight: 300;
+    font-size: 1.2em;
+    font-weight: 100;
 }
 
 .socail a,
@@ -130,7 +136,9 @@ p {
     font-weight: 100;
 }
 
-.address {
+.addres {
+    padding-top: 11px;
+    text-align: right;
     right: 0;
 }
 
@@ -178,9 +186,8 @@ a :hover {
 }
 
 .containerForm {
-    padding-left: 38px;
+    padding-left: 53px;
     position: absolute;
-
 }
 
 .containerForm h2 {
@@ -190,7 +197,7 @@ a :hover {
     font-weight: 500;
 }
 
-.containerForm h4{
+.containerForm h4 {
     padding-bottom: 0.5em;
 }
 
@@ -270,13 +277,15 @@ a :hover {
     color: #131212
 }
 
-.contact_content{
+.contact_content {
+    line-height: 1.8;
     font-size: 0.9em;
     padding-top: 3em;
     background-image: none;
     padding-left: 52px;
     padding-bottom: 0.5em;
 }
+
 /* ===================================About===================*/
 .member,
 .about_body {
@@ -326,8 +335,11 @@ a :hover {
 }
 
 .img_head_about {
+    margin-top: 1em;
+    height: 73%;
     bottom: 0;
     padding-bottom: 1%;
+    width: 100%;
 }
 
 .head-about-content {
@@ -340,6 +352,7 @@ hr {
 }
 
 .head-about p {
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -424,6 +437,7 @@ hr {
 }
 
 .img_content_why {
+    margin-top: 0.8em;
     width: 98%;
     /* height: 40%; */
     box-shadow: -3px 4px 7px 0px #888888;
@@ -431,7 +445,6 @@ hr {
 
 .content_why h6 {
     padding-top: 0.6em;
-    padding-top: 10px 0;
     font-weight: 600;
     font-family: 'Rubik-Both', sans-serif;
 }
@@ -462,12 +475,22 @@ hr {
     padding-top: 4%;
 }
 
+.team {
+    position: relative;
+}
+
 .core-team {
-    height: 43%;
+    bottom: 0;
+    height: 50%;
     width: 100%;
     background-color: #d2d3d2;
     padding: 0;
     margin: 22px 0 0 0;
+    position: absolute;
+}
+
+.core-team .card {
+    background-color: #d2d3d2;
 }
 
 .card-body {
@@ -484,15 +507,24 @@ hr {
     font-size: 14px;
 }
 
-.section {
+#about {
+    scroll-snap-type: y mandatory;
+}
+
+#about section {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    scroll-snap-align: start;
 }
 
 .card-about {
     padding-top: 0.5em;
+}
+
+.work-flow {
+    position: relative;
 }
 
 .work-flow h3 {
@@ -621,7 +653,7 @@ hr {
 }
 
 .accordion .accordion-content p {
-    font-size: 0.8rem;
+    font-size: 0.9em;
     font-weight: 300;
     /* margin: 2em 0; */
 }
@@ -633,15 +665,14 @@ hr {
 }
 
 .service {
-    position: relative;
+    /* position: relative; */
 }
 
 .img_service {
-   height: auto;
-   background-size: cover;
-   width: 100%;
-   background-image: url(../images/AboutUs/ABOUT_BANNER_03.jpg);
+    width: 100%;
+
 }
+
 .img_service img {
     width: 100%;
 }
@@ -654,7 +685,8 @@ hr {
 }
 
 .service_about h6 {
-    font-weight: 550;
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 .service_about img {
@@ -696,8 +728,9 @@ hr {
 /* ===================================Work====================*/
 .body_work {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: #efefef;
+    position: relative;
 }
 
 .banner {
@@ -739,6 +772,7 @@ hr {
     overflow: visible;
     padding: 44px 0 21px 0 !important;
 }
+
 .banner h2 {
     text-align: center;
     padding: 20%;
@@ -746,6 +780,7 @@ hr {
 }
 
 .noidung-work {
+    position: relative;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -891,9 +926,23 @@ hr {
     cursor: pointer;
 }
 
+.blog_param {
+    margin-bottom: 5px;
+    /* border-bottom: solid 2px #333; */
+}
+
 .blog_param:hover img {
     background-color: rgb(200, 200, 200);
     transform: scale(1.025);
+}
+
+.info_blog {
+    /* margin-bottom: -10px; */
+    border-bottom: solid 2px #333;
+}
+
+.info_blog a {
+    font-weight: 600;
 }
 
 .info-store:hover h5 {
@@ -905,9 +954,10 @@ hr {
     color: #333;
 }
 
-blog_param hr{
+blog_param hr {
     width: 63%;
 }
+
 .des-qa {
     position: relative;
 }
@@ -950,6 +1000,25 @@ blog_param hr{
     font-size: 1.5em;
 }
 
+/* =========================================================================================
+========================================= Animation ========================================
+============================================================================================ */
+.body_animation{
+    width: 100%;
+    height: 100%;
+}
+
+.video_animation{
+    position: relative;
+    width: 94%;
+    height: 95%;
+    margin: auto;
+    padding: 10px 0 ;
+    
+}
+.ytp-watermark, .yt-uix-sessionlink{
+    opacity: 0 !important; 
+}
 /* ====================================Responsive==========================================
 ===========================================================================================
 =========================================================================================== */
@@ -957,15 +1026,12 @@ blog_param hr{
 @media only screen and (min-width: 1400px) {
 
     .content_why {
-        line-height: 1.5;
-        font-size: 1.3em;
-        padding-top: 22px;
-        padding-left: 55px;
+        font-size: 1.2em;
     }
 
     .content_why h6 {
         padding-top: 0.8em;
-
+        font-size: 1.3em;
     }
 
     .content_service {
@@ -990,10 +1056,16 @@ blog_param hr{
         margin-bottom: 3.3em;
         padding: 5em 0 0 0;
     }
-    
-    .store-body {padding: 78px;margin-left: 5em;}
 
-    .blog {height: 74%;width: 110%;}
+    .store-body {
+        padding: 78px;
+        margin-left: 5em;
+    }
+
+    .blog {
+        height: 74%;
+        width: 110%;
+    }
 
     .footer {
         z-index: 99999;
@@ -1004,63 +1076,132 @@ blog_param hr{
         margin-bottom: 7em;
         margin-left: 1.5em;
     }
+
     .contact {
         padding-left: 4em;
     }
+
     .containerForm {
         padding-top: 2em;
-        
+
     }
+
     .contact_content {
         font-size: 1.2em;
         line-height: 2;
     }
-    .content-work-flow p{
+
+    .content-work-flow p {
         padding-top: 2em;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
-    .accordion button .accordion-title{
+
+    .accordion button .accordion-title {
+        font-size: 1.4em;
+    }
+
+    .accordion .accordion-content p {
         font-size: 1.2em;
     }
-    .accordion .accordion-content p{
-        font-size: 1.1em;
-    }
+
     .work-flow img {
         margin-top: 2em;
     }
-    .content-work-flow h6{
+
+    .content-work-flow h6 {
         font-size: 1.6em;
     }
-    .infomation-home{
+
+    .infomation-home {
         padding-bottom: 8em;
     }
+
     .footer-info p {
         font-size: 1.3em;
     }
+
     .socail a {
         font-size: 1.25em;
     }
 
+    .icon_footer {
+        margin-top: 3px;
+
+    }
+
+    .contact_content h5 {
+        font-size: 22px;
+        font-weight: 500;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
-    .core-team{
-        /* padding: 27px 0 0 0; */
+    .core-team {
+        height: 46%;
     }
+
     .footer-info p {
         font-size: 1.25em;
     }
+
     .head-about-content {
         margin-bottom: 4.2em;
         padding: 5em 0 0 0;
     }
 
+    .content_why {
+        font-size: 1.2em;
+    }
+
+    .content-work-flow p {
+        padding-top: 2em;
+        font-size: 1.5em;
+    }
+
+    .accordion button .accordion-title {
+        font-size: 1.7em;
+    }
+
+    .accordion .accordion-content p {
+        font-size: 1.5em;
+    }
+
 
 }
 
+@media only screen and (max-width: 768px) {
+    .noidung-work .khoianh {
+        width: 48%;
+        margin: 0 auto
+    }
+
+    .head-about img {
+        width: 180px;
+    }
+
+    .head-about p {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .noidung-work{
+        padding-left: 2px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .footer-info {
+        height: 20vh;
+        bottom: 16px;
+    }
+    .noidung-work .khoianh {
+        width: 95%;
+        margin: 0 auto
+    }
+}
 
 /* ========================Animation intro============================== */
 .overlay {
+    font-size: 13px;
     position: absolute;
     width: 100%;
     height: 100vh;
