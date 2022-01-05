@@ -142,3 +142,33 @@ if (hours >= 24) {
 }
 
 document.getElementById("time").innerHTML = `DA NANG ${hours}:${minutes}`;
+
+// =============================================
+//          Autovideo Animation
+// =============================================
+const video__animation = document.querySelector('.video_animation iframe');
+let playState = null;
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      video__animation.pause();
+      playState = false;
+    } else {
+      video__animation.play();
+      playState = true;
+    }
+  });
+}, {});
+
+observer.observe(video__animation);
+
+const onVisibilityChange = () => {
+  if (document.hidden || !playState) {
+    video__animation.pause();
+  } else {
+    video__animation.play();
+  }
+};
+
+document.addEventListener("visibilitychange", onVisibilityChange);
